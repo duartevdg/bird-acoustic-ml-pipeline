@@ -1,0 +1,107 @@
+# This YAML file contains all configurable options for the audio classification pipeline.
+# It includes dataset placeholders, audio preprocessing, augmentation, feature extraction, and model selection.
+# Users can adapt any option to their own datasets or extend the pipeline with additional methods.
+
+
+# Each dataset CSV should include:
+# - file: audio filename or path
+# - class: target label
+# - features: numeric feature columns extracted from audio
+data_subsets:
+  - example_dataset_1
+  - example_dataset_2
+
+# Supported audio formats; additional types can be added in the preprocessing module
+formats:
+  - none
+  - wav
+  - ogg
+  - flac
+  - mp3
+
+# Sampling rates in Hz (common values: 16000, 22050, 32000, 44100; 'none' keeps original)
+sampling_rates:
+  - none
+
+# Bit depth of audio files (commonly 16, 24, or 32; 'none' keeps original)
+bit_depths:
+  - none
+
+# Supported channels; additional types can be added in the preprocessing module
+channels:
+  - none
+  - mono
+  - stereo
+
+# Supported amplitude normalisation methods; additional types can be added in the preprocessing module
+amplitude_methods:
+  - none
+  - peak
+  - rms
+
+# Pre-emphasis coefficient (numeric range from 0 to 1; 'none' means no pre-emphasis)
+# Example: 0.0, 0.3, 0.5, 0.7, 0.9
+pre_emphasis_coefficients:
+  - none
+
+# Supported segmentation methods; additional types can be added in the preprocessing module
+segmentation_methods:
+  - none
+  - time_based
+  - event_based
+
+# Supported denoising methods; additional types can be added in the preprocessing module
+denoising_methods:
+  - none
+  - lowpass
+  - bandpass
+  - noisereduce
+  - wiener
+  - spectral_sub
+  - wavelet
+
+# Supported augmentation methods; additional types can be added in the preprocessing module
+augmentation_methods:
+  - none
+  - audio_mixing
+  - cutmix
+  - dynamic_range_compression
+  - frequency_masking
+  - mixup
+  - pitch_shift
+  - reverberation
+  - random_cropping
+  - speed_perturbation
+  - spectrogram_manipulations
+  - specaugment
+  - time_masking
+  - time_shifting
+  - waveform_mixing
+  - noise_injection
+  - time_warping
+
+# Supported feature extractors; additional types can be added in the feature module
+feature_extractors:
+  - time
+  - frequency
+  - time_frequency
+  - cepstral
+  - combined
+
+# Supported models; additional models can be easily added in the models module
+model_names:
+  - random_forest
+  - xgboost
+  - lightgbm
+  - m3gp
+
+
+# Whether features are normalised (true/false)
+normalize: none
+
+# Whether feature selection is applied (true/false)
+select: none
+
+# Number of top k features to select (integer or 'none' for all features)
+top_k_features: none
+  

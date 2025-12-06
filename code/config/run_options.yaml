@@ -1,0 +1,73 @@
+# MAIN EXPERIMENT CONFIGURATION
+# -----------------------------
+# This is the main YAML file to edit for running experiments with the audio classification pipeline.
+# Users can select datasets, preprocessing options, feature extractors, models, and hyperparameters here.
+# Alternative options are commented for reference — uncomment or modify as needed.
+# More than one value can be selected for each option to run multiple experiments in a single execution.
+
+data_subsets:
+  - example_dataset_1
+
+formats:
+  - wav
+
+sampling_rates:
+  - 22050
+
+bit_depths:
+  - 16
+
+channels:
+  - mono
+
+amplitude_methods:
+  - peak
+
+pre_emphasis_coefficients:
+  - none
+  - 0.95
+  - 0.96
+
+segmentation_methods:
+  - none
+
+denoising_methods:
+  - none
+  - lowpass
+
+augmentation_methods:
+  - none
+
+feature_extractors:
+  - time
+  - frequency
+  - time_frequency
+  - cepstral
+  - combined
+
+model_names:
+  - random_forest
+  - xgboost
+  - lightgbm
+  - m3gp
+
+models:
+  random_forest:
+    n_estimators: 150
+    max_depth: 6
+    n_jobs: -1
+  xgboost:
+    n_estimators: 150
+    max_depth: 6
+    n_jobs: -1
+  m3gp:
+    max_depth: 6
+    max_generation: 50
+  lightgbm:
+    n_estimators: 150
+    max_depth: 6
+    n_jobs: -1
+
+normalize: True
+select: False
+top_k_features: 50

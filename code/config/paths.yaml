@@ -1,0 +1,14 @@
+# Project paths (user should adapt to their system)
+base_path: "/path/to/project"  # Root folder of the project
+
+# Config and data directories
+configs_path: "${base_path}/config"
+data_path: "${base_path}/data"
+metadata_path: "${base_path}/metadata"
+
+# Output directories
+features_path: "${base_path}/outputs/features"
+models_path: "${base_path}/outputs/models"
+results_path: "${base_path}/outputs/results"
+logs_path: "${base_path}/outputs/logs"
+temp_path: "/path/to/temp"  # Temporary files folder
