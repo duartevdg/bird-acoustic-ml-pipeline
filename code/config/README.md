@@ -1,4 +1,4 @@
-'Config Folder'
+# Config Folder
 
 This folder contains all configuration YAML files for the project. 
 
