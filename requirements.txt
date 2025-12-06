@@ -1,0 +1,16 @@
+numpy>=2.2
+pandas>=2.3
+scipy>=1.15
+scikit-learn>=1.6
+librosa>=0.11
+soundfile>=0.13
+xgboost>=1.7
+lightgbm>=4.6
+m3gp>=1.2
+pyyaml>=6.0
+joblib>=1.5
+tqdm>=4.67
+python-speech-features>=0.6
+noisereduce>=3.0
+torch>=2.7
+torchaudio>=2.7
