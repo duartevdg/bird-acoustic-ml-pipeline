@@ -32,8 +32,8 @@ from tqdm import tqdm
 API_KEY = "API_KEY"  # <-- Replace with API key
 DATASET_NAME = "DATASET_NAME"  # <-- Replace with dataset name
 AUDIO_DIR = "DATASET_PATH"  # <-- Replace with audio dataset path
-CSV_OUTPUT_PATH = rf"C:\Users\User\Desktop\Duarte\results\dataset_analysis\metadata_files\{DATASET_NAME}_metadata.csv"
-FAILED_JSON_PATH = rf"C:\Users\User\Desktop\Duarte\results\dataset_analysis\metadata_files\{DATASET_NAME}_failed.json"
+CSV_OUTPUT_PATH = # Add csv output path
+FAILED_JSON_PATH = # Add failed json path
 
 os.makedirs(os.path.dirname(CSV_OUTPUT_PATH), exist_ok=True)
 
@@ -184,3 +184,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
