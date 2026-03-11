@@ -1,0 +1,16 @@
+Given a Xeno-Canto recording ID, the recording can be accessed directly via its URL:
+https://xeno-canto.org/<recording_id>
+
+For example, the recording with ID 858436 is available at:
+https://xeno-canto.org/858436
+
+The recordings can be retrieved automatically using the Xeno-Canto API by querying the recording ID.
+
+The API endpoint is:
+https://xeno-canto.org/api/3/recordings
+
+For example, to retrieve recording ID 858436, use the following query:
+https://xeno-canto.org/api/3/recordings?query=xc:858436
+
+For more information, refer to the Xeno-Canto API documentation:
+https://xeno-canto.org/explore/api
